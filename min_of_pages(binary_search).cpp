@@ -8,7 +8,7 @@ Approach -
 we take a mid value between min 0 and max total sum of pages and assume it as solution.
 check it if it is true or not.
 their will be two cases 
-[1] students are exceding means we have to increase the number of pages (start = mid+1)
+[1] students are exceding means we have to increase the number of pages one student can read at a time (start = mid+1)
 [2] students are satisfying the condition but we try find any other val smaller to current that can satisfy this condition (end = mid-1) for finding optimal solution.
 */
 #include<bits/stdc++.h>
