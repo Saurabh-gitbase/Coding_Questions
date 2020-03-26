@@ -15,6 +15,10 @@ class Node
 
 Node* eliminate_duplicate(Node* head)
 {
+    if (head == NULL || head->next == NULL) 
+    { 
+        return head; 
+    } 
     unordered_map<int,int> frequency;
     Node* temp = head;
     
