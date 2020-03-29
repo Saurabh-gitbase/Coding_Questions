@@ -1,3 +1,5 @@
+// Merging two arrays in O(1) space. Shell Sort. 
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -84,3 +86,38 @@ int main()
 	
 	return 0;
 }
+
+
+/* Merging two arrays array1 and array2 of size n and m into array1 of size n+m.
+void merge(vector<int> &arr1,int n,vector<int> &arr2,int m)
+{
+	int i = n-1;
+	int j = m-1;
+	int endIndex = n+m-1;
+	
+	while(j>=0 && i>=0)
+	{
+		if(arr1[i] > arr2[j])
+		{
+			arr1[endIndex] = arr1[i];
+			i--;
+			endIndex--;
+		}
+		else
+		{
+			arr1[endIndex] = arr2[j];
+			j--;
+			endIndex--;
+		}
+	}
+	if(j>=0)
+	{
+		while(j>=0)
+		{
+			arr1[endIndex] = arr2[j];
+			j--;
+			endIndex--;
+		}
+	}
+}
+*/
