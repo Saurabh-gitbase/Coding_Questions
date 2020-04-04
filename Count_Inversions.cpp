@@ -50,7 +50,7 @@ long int _mergesort(int arr[],int temp[],int left,int right)
 {
     int mid;long int inv_count=0;
     
-    if(right>left)
+    if(left<right)
     {
         mid = (right+left) /2;
         
